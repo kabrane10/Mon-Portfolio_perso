@@ -162,15 +162,6 @@ button{
 }
     
     
-    /* Responsive */
-@media (max-width: 768px){
-    .stats {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-}
-    
-    
 .titre {
     font-size: 24px;
 }
@@ -308,14 +299,30 @@ button{
     
 }
 
-#id{
-    display: inline-flex; /*aligner les nbres en % */
-    border:  solid #000;
-    min-width: 450px;
-    background: linear-gradient(to right, #000 270px, #fff 180px);
-    height: -1px;
-
+.bar {
+    display: inline-flex;
+    width: 80%;
+    height: 6px;
+    background: #e5e5e5;
+    margin-top: 5px;
+    border-radius: 3px;
+    
 }
+
+.progres {
+    
+    height: 100%;
+    background: black;
+    border-radius: 3px;
+    text-align:right;
+}
+
+.span1{
+    margin-top: -10px;
+    padding-left: 50px;
+}
+
+
 
 h3{
 padding-top: -10px;
@@ -539,4 +546,13 @@ a{
     text-align: center;
     padding-bottom: 20px;
 }
+
+    /* Responsive */
+    @media (max-width: 768px){
+        .stats {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+    }
+
 
